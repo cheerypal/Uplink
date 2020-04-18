@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>252</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>account_type
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>581</x>
+      <y>658</y>
+      <w>217</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=left
+Uplink
+Database Schema
+
+&lt;&lt; HOMEOWNER &gt;&gt;
+
+Revision: 7
+Date: 27/02/2020
+Author: BM
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>273</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* account_type_id
+account_type_name
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>273</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>224</y>
+      <w>133</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* user_id
+^ user_account_type
+user_username
+user_password
+user_created
+user_last_active
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>224</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+INT
+TEXT
+TEXT
+INT (UNIX TIME)
+INT (UNIX TIME)
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>203</y>
+      <w>217</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>user
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>280</y>
+      <w>154</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>462</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* room_id
+room_name
+group=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>462</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+group=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>441</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>room
+group=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>378</y>
+      <w>133</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* sensor_id
+^ sensor_room
+^ sensor_type
+sensor_name
+sensor_added
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>378</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+TEXT
+INT
+INT
+TEXT
+INT (UNIX TIME)
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>357</y>
+      <w>217</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>sensor
+group=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>364</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* sensor_type_id
+sensor_type_name
+group=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>364</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+group=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>343</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>sensor_type
+group=5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>392</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* sensor_reading_id
+^ sensor_reading_sensor_id
+sensor_reading_value
+sensor_reading_timestamp
+group=6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>392</y>
+      <w>84</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+FLOAT
+INT (UNIX TIME)
+group=6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>371</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>sensor_reading
+group=6</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>560</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* device_type_id
+device_type_name
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>560</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>539</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>device_type
+group=7</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>518</y>
+      <w>133</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* device_id
+^ device_type
+^ device_room
+device_wattage
+device_name
+device_added_timestamp
+group=8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>518</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+TEXT
+INT
+INT
+INT
+TEXT
+INT (UNIX TIME)
+group=8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>497</y>
+      <w>217</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>device
+group=8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>119</y>
+      <w>287</w>
+      <h>665</h>
+    </coordinates>
+    <panel_attributes>Auxiliary Tables</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>371</y>
+      <w>154</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;40.0;200.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>406</y>
+      <w>196</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>420</y>
+      <w>154</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;80.0;110.0;80.0;110.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>567</y>
+      <w>154</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>483</y>
+      <w>154</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;90.0;200.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>539</x>
+      <y>21</y>
+      <w>301</w>
+      <h>609</h>
+    </coordinates>
+    <panel_attributes>Object Tables</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>931</x>
+      <y>21</y>
+      <w>315</w>
+      <h>917</h>
+    </coordinates>
+    <panel_attributes>Data Tables</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>175</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* property_id
+property_name
+group=9</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>175</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+group=9</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>154</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>property
+group=9</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>518</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* device_reading_id
+^ device_reading_device_id
+device_reading_type
+device_reading_value
+device_reading_timestamp
+group=10</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>518</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+TEXT
+TEXT
+INT (UNIX TIME)
+group=10</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>497</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>device_reading
+group=10</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>532</y>
+      <w>196</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>77</y>
+      <w>133</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* auth_id
+auth_token
+^ auth_user_id
+auth_created
+auth_expires
+group=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>77</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+INT
+INT
+INT
+group=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>56</y>
+      <w>217</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>auth
+group=11</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>154</y>
+      <w>42</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>266</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* timer_oneshot_id
+timer_oneshot_trigger
+^ timer_oneshot_device_id
+^ timer_oneshot_command
+group=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>266</y>
+      <w>84</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+INT (UNIX TIME)
+TEXT
+INT
+group=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>245</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>timer_oneshot
+group=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>77</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* timer_repeat_id
+timer_repeat_type
+timer_repeat_month
+timer_repeat_day
+timer_repeat_hour
+timer_repeat_minute
+^ timer_repeat_device_id
+^ timer_repeat_command
+timer_repeat_last_run
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>77</y>
+      <w>84</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+INT
+INT
+INT
+INT
+TEXT
+INT
+INT (UNIX TIME)
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>56</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>timer_repeat
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>294</y>
+      <w>196</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;150.0;180.0;150.0;180.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>280</y>
+      <w>196</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;350.0;160.0;350.0;160.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>154</y>
+      <w>196</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;330.0;140.0;330.0;140.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>140</y>
+      <w>196</w>
+      <h>392</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;530.0;120.0;530.0;120.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>665</y>
+      <w>168</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* device_command_id
+^ device_command_device_type
+device_command_name
+device_command_mqtt
+device_command_value
+device_command_mqtt_res
+device_command_value_res
+group=14</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>665</y>
+      <w>63</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+INT
+TEXT
+TEXT
+TEXT
+TEXT
+TEXT
+group=14</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>644</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>device_command
+group=14</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>315</x>
+      <y>595</y>
+      <w>42</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>658</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* device_trigger_id
+^ device_trigger_device_id
+^ device_trigger_sensor_id
+device_trigger_gt_lt
+device_trigger_sensor_value
+^ device_trigger_command
+group=15</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>658</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+TEXT
+TEXT
+TEXT
+FLOAT
+INT
+group=15</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>637</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>device_trigger
+group=15</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>546</y>
+      <w>196</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0;160.0;190.0;260.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>420</y>
+      <w>196</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;390.0;260.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>798</y>
+      <w>147</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>halign=right
+* warning_id
+warning_timestamp
+warning_last_updated_ts
+^ warning_device_id
+^ warning_sensor_id
+warning_message
+warning_severity
+warning_read
+group=16</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>777</y>
+      <w>231</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>warning
+group=16</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>798</y>
+      <w>84</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>halign=left
+INT
+INT
+INT
+TEXT
+TEXT
+TEXT
+INT
+INT
+group=16</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>434</y>
+      <w>196</w>
+      <h>399</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0;180.0;540.0;260.0;540.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>791</x>
+      <y>560</y>
+      <w>196</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;380.0;260.0;380.0</additional_attributes>
+  </element>
+</diagram>
