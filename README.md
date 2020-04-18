@@ -1,4 +1,4 @@
-# F29SO-Sinderet-Green
+# Uplink
 
 Group Project for F29SO 2019
 
