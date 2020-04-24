@@ -1,6 +1,16 @@
 # Uplink
 
-Group Project for F29SO 2019
+Copy of Group Project for F29SO 2019.
+
+Smart Home Hub System to control smart devices and track energy use within the home. 
+
+### Authors:
+
+- Benjamin Milne
+- Euan Gordon
+- Andrew Sime
+
+Below is a how to guide to get the system up and running:
 
 ## `hub-api`
 
